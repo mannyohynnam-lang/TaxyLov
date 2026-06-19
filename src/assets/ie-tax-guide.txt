@@ -1,0 +1,600 @@
+
+        1. Deductible Expenses
+        What you can and cannot claim as a sole trader
+
+
+
+  Expenses must be wholly and exclusively for your business. Mixed-use costs (phone, home office) can be partially
+  claimed — business proportion only. If VAT-registered, claim the ex-VAT amount only.
+
+
+
+ Allowable deductions
+ ● Stock & raw materials
+      Goods purchased for resale or materials used to produce what you sell.
+
+ ● Premises costs
+      Rent, rates, light & heat, insurance for your business premises. Home office: pro-rata portion of utilities (e.g. 10%
+      if one dedicated room).
+
+ ● Motor & travel expenses
+      Fuel, insurance, tax, repairs — business proportion only. Keep a mileage log. Lease payments also deductible.
+
+ ● Office & tech running costs
+      Phone & broadband (business %), software subscriptions, stationery, postage. Equipment purchase = capital
+      item, claim via capital allowances.
+
+ ● Staff & contractor costs
+      Wages and salaries paid to employees (not your own drawings). Legitimate subcontractor fees.
+
+ ● Professional fees
+      Accountant, solicitor, bookkeeper fees. Bank charges and interest on business loans.
+
+ ● Marketing & advertising
+      Website costs, online ads, printed materials, signage.
+
+ ● Pre-trading expenses
+      Costs incurred before trading started (e.g. business plan) may also be deductible — see Revenue guidance.
+
+
+ Non-allowable items
+ ● Personal clothing
+      Everyday clothing — only protective/specialist work clothing qualifies.
+
+ ● Your own drawings/pay
+      What you take as personal income is profit, not an expense.
+
+ ● Business entertainment
+      Client lunches, hospitality — not deductible under Irish tax law.
+
+ ● Capital expenditure
+      Buying equipment, vehicles or property. Use capital allowances instead.
+
+
+  
+        2. Capital Allowances
+        Deducting the cost of assets over time
+
+
+
+  Capital expenditure (buying assets) cannot be expensed directly. Instead, claim wear-and-tear allowances spread
+  over the asset's life.
+
+
+
+ Wear & tear allowance — plant & machinery
+ Most business equipment is written down at 12.5% per year on a straight-line basis (full write-off over 8
+ years).
+
+
+
+ Year 1                                                                                                                  12%
+
+ Year 2                                                                                                                  25%
+
+ Year 3                                                                                                                  38%
+
+ Year 4                                                                                                                  50%
+
+ Year 5                                                                                                                  62%
+
+ Year 6                                                                                                                  75%
+
+ Year 7                                                                                                                  88%
+
+ Year 8                                                                                                                  100%
+
+ Example: Laptop purchased for €1,200 → annual deduction = €150/year for 8 years.
+
+   Asset type                                                                        Annual rate             Write-off period
+
+   Plant & machinery (incl. computers, office furniture, tools)                          12.5%                       8 years
+
+   Industrial buildings                                                                  4.0%                        25 years
+
+   Motor vehicles (CO■ restrictions apply)                                              12.5%*                       8 years*
+
+ * Motor vehicle allowances are restricted based on CO■ emission bands — consult your accountant.
+
+  Mixed-use assets: only the business-use proportion qualifies. Land does not qualify for capital allowances. Keep all
+  purchase receipts — Revenue can request them during an audit.
+
+
+        3. VAT (Value Added Tax)
+        Registration thresholds, rates, and filing
+
+
+
+            Services threshold                            Goods threshold                            Standard VAT rate
+
+
+
+            €42,500                                       €85,000                                        23%
+              annual turnover                              annual turnover                          most goods & services
+
+
+
+
+ VAT rates in Ireland
+
+
+ Standard (most goods/services)                                                                                       23%
+
+ Reduced (hospitality, construction)                                                                                  13.5%
+
+ Second reduced (food, books)                                                                                         9%
+
+ Zero (exports, children's clothing)                                                                                  0%
+
+
+
+ How VAT works for a sole trader
+                                                                    You reclaim VAT on business purchases (input
+   You charge VAT on sales (output VAT)                             VAT)
+
+   Invoice €1,000 + 23% = €1,230 collected                          Bought supplies €400 + €92 VAT
+
+                                                                    Pay Revenue: €230 − €92 = €138
+
+
+ Key VAT rules
+   Rule                                          Detail
+
+   Filing frequency                              Every 2 months via Revenue Online Service (ROS)
+
+   Threshold monitoring                          Rolling 12-month basis — not just the calendar year
+
+   Registration deadline                         Must register within 30 days of exceeding the threshold
+
+   Voluntary registration                        Allowed below threshold — useful to reclaim VAT on large purchases
+
+   Expense claims                                If VAT-registered, claim ex-VAT amounts only as business expenses
+
+   Late registration penalty                     Backdated VAT liability, interest, and penalties apply
+
+
+
+
+Irish Sole Trader Tax Guide 2025/2026 — Based on revenue.ie guidance. For information only; consult a tax advisor.          Page 4
+        4. Income Tax, PRSI & USC
+        Rates and rules for self-employed — 2026
+
+
+
+ Income Tax bands (2026)
+
+
+ Up to €44,000 (single)                                                                                                20%
+
+ Above €44,000                                                                                                         40%
+
+ Married one income: 20% band = €53,000. Married two incomes: combined up to €88,000.
+
+  Tax credits reduce your bill directly. Single sole trader: Personal Credit €2,000 + Earned Income Credit €2,000 =
+  €4,000 off your tax bill.
+
+
+
+ Universal Social Charge (USC) — 2026
+
+
+ €0 – €12,012                                                                                                          0.5%
+
+ €12,013 – €28,700                                                                                                     2.0%
+
+ €28,701 – €70,044                                                                                                     3.0%
+
+ €70,044 – €100,000                                                                                                    8.0%
+
+ Self-employed > €100k                                                                                                 11%
+
+ Exempt if total income is €13,000 or less. USC is charged on gross income (before expenses).
+
+
+ PRSI — Class S (self-employed)
+            Rate                   Minimum contribution                Exempt if income below Rate increases Oct 2026
+
+            4.2%                           €500/year                           €5,000/year                           4.35%
+ PRSI gives access to the State Pension (Contributory), Maternity Benefit, and other benefits.
+
+
+ Key deadlines
+   Date                                 Action
+
+   31 October                           File Form 11 for prior year + pay balance + pay Preliminary Tax for current year
+
+   Mid-November (ROS)                   Extended deadline typically granted for online filers — check revenue.ie each year
+
+   Every 2 months                       VAT return (if VAT-registered) via ROS
+
+   31 Oct — Preliminary Tax             Must be ≥ 90% of current year liability OR 100% of prior year tax bill
+
+
+
+
+Irish Sole Trader Tax Guide 2025/2026 — Based on revenue.ie guidance. For information only; consult a tax advisor.            Page 5
+        5. Tax Estimator — Worked Example
+        Single sole trader, standard credits, no other income
+
+
+
+  This is an estimate only. Assumes single person, no PAYE income, standard personal and earned income credits
+  (€4,000 total). USC calculated on gross income; PRSI on taxable profit.
+
+
+
+ Three income scenarios
+                                           Low income                       Mid income                      Higher income
+                                          €30,000 gross                    €60,000 gross                    €100,000 gross
+
+  Business expenses                           €5,000                           €12,000                          €25,000
+
+  Capital allowances                           €500                            €1,500                            €3,000
+
+  Taxable profit                             €24,500                           €46,500                          €72,000
+
+  Income Tax (net)                            ~€900                            ~€7,900                         ~€20,800
+
+  USC                                         ~€480                            ~€1,400                          ~€3,600
+
+  PRSI (4.2%)                                ~€1,029                           ~€1,953                          ~€3,024
+
+  Total tax                                  ~€2,409                          ~€11,253                         ~€27,424
+
+  Effective rate                              ~8.0%                            ~18.8%                           ~27.4%
+
+  Take-home                                  ~€27,591                         ~€48,747                         ~€72,576
+
+
+ Detailed breakdown — €60,000 gross income example
+   Gross income                                                                                                       €60,000
+
+   Less: business expenses                                                                                           −€12,000
+
+   Less: capital allowances                                                                                           −€1,500
+
+
+
+   Taxable profit                                                                                                    €46,500
+
+
+
+   Income Tax (gross)                                                                                                     €9,800
+
+   Less: tax credits (€4,000)                                                                                         −€4,000
+
+   Income Tax (net)                                                                                                       €5,800
+
+   USC                                                                                                                    €1,333
+
+   PRSI (4.2%)                                                                                                            €1,953
+
+
+
+   Total tax & contributions                                                                                              €9,086
+
+   Effective rate on gross                                                                                                15.1%
+
+   Take-home (approx)                                                                                                €50,914
+
+
+  Rule of thumb: Set aside 25–35% of each payment received into a separate savings account for tax. Adjust based
+  on your actual figures each year.
+
+
+
+
+        6. Daily Record-Keeping Habits
+        The steps to take every day, week, and year to stay compliant
+
+
+
+  Good daily habits make year-end filing painless. Revenue requires all records to be kept for 6 years in case of audit.
+  Records include invoices, bank statements, mileage logs, and contracts.
+
+
+
+ Every day
+   1    Record every transaction
+        Log income received and expenses paid immediately. Use accounting software (Bullet, FreeAgent, Xero) or a
+        dedicated spreadsheet. Never rely on memory.
+
+   2    Keep all receipts
+        Photo or scan receipts on the same day. Revenue's free Receipts Tracker (via myAccount) lets you store them
+        digitally. You must produce them on audit.
+
+   3    Use a separate bank account
+        Keep business and personal finances strictly separate. Mixing them is the single biggest source of errors and
+        audit problems for sole traders.
+
+
+ Every week
+   4    Reconcile invoices & payments
+        Match each payment received to an invoice. Chase overdue amounts. Log any cash income — all revenue must
+        be declared.
+
+   5    Update your mileage log
+        If claiming motor expenses, log date, purpose, start/end location, and km for each business trip. Without this
+        Revenue will disallow the claim.
+
+
+ Every month
+   6    Set aside tax money
+        Transfer 25–35% of net income to a dedicated tax savings account. Adjust the rate based on your tax estimator
+        figures.
+
+   7    Reconcile bank statements
+        Cross-check your accounting records against your bank statement. Catching mistakes monthly is far easier than
+        untangling a full year.
+
+   8    File VAT return (if registered)
+        VAT returns are due every two months via ROS. Late filing attracts interest charges from Revenue.
+
+
+ Every year — before 31 October
+   9    Prepare your profit & loss summary
+        Tally total income, total allowable expenses, and capital allowances to arrive at your taxable profit figure for
+        Form 11.
+
+   1    File Form 11 via ROS
+   0    Submit your Income Tax return online through Revenue Online Service. Include your self-assessment. Pay the
+        balance of last year's tax and Preliminary Tax for the current year.
+
+   1    Review & adjust your saving rate
+   1    Compare what you saved with what you actually owed. Adjust your monthly set-aside rate up or down for next
+        year so there are no surprises.
+
+
+
+
+
+
+
+  Remember: Revenue can audit any of the past 6 years. Ensure all invoices, bank statements, mileage logs, and
+  contracts are stored securely and are easily retrievable.
+
+
+
+
+Irish Sole Trader Tax Guide 2025/2026 — Based on revenue.ie guidance. For information only; consult a tax advisor.          
+
+Monthly categories:
+💰 SECTION 1: INCOME (4 Buckets)
+Tracks every type of cash, electronic, or invoiced revenue streaming into the business, before any tax or expense deductions.
+1. CASH — Cash sales (gross, pre-VAT)
+Explanation: Physical banknotes, coins, or on-the-spot over-the-counter payments received directly from customers at the immediate point of sale.
+AI Trigger Examples: Coins inside an artisan baker's register till at a weekend market, a cash €50 note paid directly to a mobile hairstylist after an appointment, or cash dropped into a physical honesty box at a farm gate.
+2. BANK — Bank receipts (gross, pre-VAT)
+Explanation: Direct electronic deposits hitting your business bank account or merchant settlement accounts that bypass traditional manual sales invoicing.
+AM Trigger Examples: Stripe or PayPal daily batch payouts from e-commerce sales, SumUp or Revolut Business card reader card taps, a direct SEPA bank transfer from a customer paying on account without an active invoice reference.
+3. INV — Invoiced sales (gross, pre-VAT)
+Explanation: Formal trade debtors accounts; credit sales tracked via structured sequential invoices issued to B2B clients or commercial entities.
+AI Trigger Examples: A 30-day payment term invoice sent to a corporate client for a consulting project, an automated PDF invoice generated via software for a web design build, or a progressive valuation milestone claim sent to a main contractor.
+4. VAT_OUT — VAT collected
+Explanation: The exact Value Added Tax element added onto your sales invoices or collected at checkout that you hold temporarily on behalf of Revenue.
+AI Trigger Examples: The 23% VAT added to a standard consulting invoice, the 13.5% VAT component added by a building contractor on a domestic repair bill, or the aggregated VAT totals collected from digital e-commerce checkouts across the month.
+🛒 SECTION 2: PURCHASES (3 Buckets)
+Direct cost of sales (COGS) required to physically build, purchase, or source products or specialized fulfillment services.
+5. MATERIALS — Materials / supplies
+Explanation: Raw physical elements, inventory stock bought for direct resale, or consumables entirely used up in completing a specific client job.
+AI Trigger Examples: Bulk timber or screws bought at Chadwicks by a carpenter, physical clothing stock imported for an online boutique shop, hair dyes bought at a wholesale beauty supply shop, or wholesale ingredients purchased from Musgrave by a caterer.
+6. SUBCON_RCT — Subcontractors (RCT)
+Explanation: Payments made to subcontractors operating within the Relevant Contracts Tax framework in the construction, forestry, or meat processing sectors.  
+osheatax.com
+AI Trigger Examples: Payments issued to an RCT-registered bricklayer, an electrician hired by a main builder to wire a house extension, or an independent timber harvester contracted for forestry clearance.  
+osheatax.com
+7. SUBCON_OTHER — Subcontractors (other)
+Explanation: Fees paid to external professionals, technical consultants, or freelancers who are not subject to the sectoral RCT withholding tax scheme.
+AI Trigger Examples: Invoices from a freelance copywriter assisting a marketing agency, an outsourced virtual assistant handling data entry, a graphic designer hired to create a client logo, or an IT technician brought in for a network cable installation.
+🏢 SECTION 3: OVERHEADS (16 Buckets)
+The essential, day-to-day fixed and operational running costs required to keep the business entity functioning legally and structurally.
+8. VAT_IN — VAT paid (input)
+Explanation: The deductible Value Added Tax element charged to you by other VAT-registered suppliers on your business purchases.
+AI Trigger Examples: The 23% VAT component on your monthly office broadband bill, the VAT broken down on a Woodie's receipt for business cleaning supplies, or the input VAT shown on an accountant's annual bill.
+9. WAGES — Wages & salaries
+Explanation: Gross labor remuneration distributions paid out to legitimate staff members registered on your formal corporate PAYE payroll setup.
+AI Trigger Examples: Monthly salary transfers to a retail shop assistant, payroll runs for a part-time administrative secretary, or performance bonuses processed through your payroll system.
+10. RENT — Rent
+Explanation: Recurring contractual payments for the leasing or occupation of commercial brick-and-mortar property assets.
+AI Trigger Examples: Monthly rent for a high-street retail unit, lease fees for an industrial workshop, or a recurring monthly invoice for a hot-desk space in a co-working building.
+11. RATES — Rates
+Explanation: Mandatory commercial property taxes calculated and levied annually or semi-annually by local county administrative authorities.
+AI Trigger Examples: Annual commercial rates invoices issued by Dublin City Council, Cork County Council, or Galway County Council for keeping a physical storefront or commercial warehouse space open.
+12. HEAT_LIGHT — Heat & light / other bills
+Explanation: Operational energy overheads and facility utility bills required to maintain climate control and power at a business workspace.
+AI Trigger Examples: Commercial electricity accounts with Electric Ireland or Bord Gáis Energy, heating oil deliveries for a mechanical garage, or waste management collection fees with Panda or Greyhound.
+13. TELEPHONE — Telephone
+Explanation: Telecommunication connections and cellular phone plans explicitly dedicated to customer service, field work, or sales communications.
+AI Trigger Examples: Vodafone Business mobile monthly contracts, Eir landline installations for an office reception desk, or a dedicated business mobile plan with Three or Vodafone.
+14. INTERNET — Internet
+Explanation: Fixed or wireless digital data pipes and network subscription lines necessary to access online services at your principal place of work.
+AI Trigger Examples: Virgin Media Business broadband monthly invoices, fixed fiber internet lines for an office unit, or dedicated 5G mobile broadband routers used on-site.
+15. POSTAGE — Postage & stationery
+Explanation: Administrative paperwork tools, physical mailing fulfillment supplies, and small everyday office consumables.
+AI Trigger Examples: Rolls of postage stamps or registered post tracking slips from An Post, reams of white printer paper from Viking Direct, bubble-wrap envelopes, notebooks, pens, and desk organization trays.
+16. SOFTWARE — Software & subscriptions
+Explanation: Cloud-hosted software-as-a-service (SaaS) operational licenses, digital productivity suites, and online business platforms.
+AI Trigger Examples: Xero or QuickBooks accounting monthly subscriptions, Microsoft 365 or Google Workspace email hosting, Adobe Creative Cloud monthly software licenses, or Zoom/Slack communication platform renewals.
+17. ADVERT — Advertising
+Explanation: Multi-channel promotional outlays targeted directly at generating leads, building brand visibility, or acquiring new customers.
+AI Trigger Examples: Monthly ad account bills from Google Ads or Meta (Facebook/Instagram) Campaigns, printing costs for local flyer distribution, car vinyl wrap signage, or sponsorships in local community booklets.
+18. MOTOR — Motor
+Explanation: Direct running running costs required to keep a commercial vehicle moving or maintain business travel capability.
+AI Trigger Examples: Diesel or petrol purchases at a Circle K pump using a business card, annual commercial motor tax discs, commercial van insurance policy premiums, or commercial vehicle lease/PCP repayments.
+19. TRAVEL_SUB — Travel & subsistence
+Explanation: Expenses incurred when working away from your permanent business location, traveling to clients, or attending trade exhibitions.
+AI Trigger Examples: Irish Rail train tickets, M50 toll tag account payments (eFlow), short-term airport parking receipts, taxi journeys to a client site, or modest subsistence meals while on overnight business trips.
+20. REPAIRS — Repairs / tools
+Explanation: Small physical equipment purchases below the long-term capital allowance threshold, or the maintenance and repair of existing business property.
+AI Trigger Examples: Replacing a broken drill bit or hand tool at a hardware store, call-out fees for an electrician to fix a socket in your office, or repairing a broken office chair mechanism.
+21. PROF_FEES — Professional fees
+Explanation: Professional advisory fees, accounting checks, legal compliance drafting, or mandatory trade organization memberships.
+AI Trigger Examples: Invoices from an accountant for preparing your annual Form 11, consulting fees for a solicitor to review a commercial lease, or annual registration fees for professional bodies (e.g., Safe Electric, Law Society, or RIAI).
+22. BANK_FEES — Bank fees & loan interest
+Explanation: Standard operational banking transactional costs, merchant payment processing subtractions, or the interest element on business debt.
+AI Trigger Examples: Quarterly current account maintenance fees from AIB or Bank of Ireland, transaction processing cuts subtracted by Stripe or PayPal before payouts, or the interest portion of a dedicated business microfinance loan payment.
+23. SUNDRY — Sundry / other
+Explanation: Small, irregular miscellaneous operational expenses that are completely legally allowable but do not logically fit any specific high-volume tracking bucket.
+AI Trigger Examples: Registering a new company domain name on Blacknight, buying a small presentation whiteboard, or paying a small registration fee for a local network meetup event.
+🛑 SECTION 4: DRAWINGS (1 Bucket)
+Tracks the extraction of capital or inventory by the sole trader for strictly personal use. These items are entirely non-deductible from net business trading profits.
+24. DRAWINGS — Drawings (owner)
+Explanation: Any movement of cash out of the business ecosystem into the owner's personal life, or any private personal spending accidentally executed using a business payment card.
+AI Trigger Examples: A direct online banking transfer of €500 from your business account to your personal savings account ("owner's salary"), paying for your personal weekly family grocery shopping at Tesco with the business Visa card, or paying your private residential home mortgage using business funds.
+
+Yearly categories:
+🏛️ SECTION 1: CAPITAL_ALLOW (10 Buckets)
+As shown in file IMG_6705_2.jpg and file IMG_6706_2.jpg, these handle long-term asset investments (Capex) and their specific statutory year-end tax write-off rates instead of commercial accounting depreciation.
+1. PLANT_MACH_CAPEX — Plant & machinery capex (12.5%)
+Explanation: The purchase of core physical machinery or business equipment expected to last multiple years. It qualifies for a standard wear-and-tear allowance spread equally over 8 years.
+Examples: Buying a high-spec Apple MacBook Pro for software development, workshop table saws, office desks, ergonomic studio chairs, or specialized camera bodies for a media business.
+2. EEE_CAPEX — Energy-efficient equip. capex (100%)
+Explanation: Accelerated Capital Allowances (ACA) allowing an immediate 100% tax write-off in Year 1 for purchasing triple-A rated energy-saving equipment certified by Sustainable Energy Authority Ireland (SEAI).
+Examples: Installing a commercial solar PV panel array on a warehouse roof, buying a high-efficiency commercial heat pump, or upgrading a complete office facility to smart LED lighting grids.
+3. FARM_SAFE_CAPEX — Farm safety equip. capex (50%)
+Explanation: An accelerated investment incentive allowing agricultural businesses to write off half (50%) of the asset value per year over 2 years for qualified health and safety machinery.
+Examples: Purchasing anti-crush calving gates, specialized tractor access safety steps, chemical storage cabinets, or heavy-duty cattle crush livestock handling installations.
+4. GAS_VEH_CAPEX — Gas vehicles capex (33.3%)
+Explanation: An incentive program allowing a accelerated 3-year equal write-off (33.3% annually) for heavy commercial goods transport vehicles run cleanly on alternative gas fuels.
+Examples: Purchasing a dedicated long-haul delivery lorry running exclusively on compressed natural gas (CNG), liquefied natural gas (LNG), or biomethane fuel systems.
+5. CHILDCARE_CAPEX — Childcare/fitness capex (15%)
+Explanation: Capital spend on providing staff welfare facilities, written off over multiple years at a 15% annual statutory reduction rate.
+Examples: Fitting out an on-site corporate creche structure for employees' children, or purchasing commercial treadmills and weight machines to build a private staff fitness gym.
+6. CAP_ALLOW_BF_USC — Prior year B/F (USC)
+Explanation: Unused wear-and-tear capital allowance balances carried forward out of your prior tax year filings that are legally allowed to actively reduce your Universal Social Charge (USC) calculation in the current year.
+Examples: An automated accounting adjustment line item pulling €4,500 of legacy capital allowances from the previous year's Form 11 to offset this year's total taxable income for both IT and USC.
+7. CAP_ALLOW_B-F_NON_USC — Prior year B/F (Non-USC)
+Explanation: Historical capital allowances brought forward from prior periods that only offset standard Income Tax liabilities but are restricted and cannot be used to lower your USC base calculation.
+Examples: Legacy allowances originally derived from old incentivized property schemes or specific tax relief structures carried forward into the current tax year.
+8. SALE_PROCEEDS — Sale proceeds (balancing)
+Explanation: The total cash value or trade-in value realized when a previously capitalized asset is sold or scrapped during the operating year.
+Examples: Selling a 4-year-old company delivery transit van to a private buyer for €6,000, or trading in an old laser engraving machine for a store credit value of €1,200.
+9. WDV — Tax written-down value
+Explanation: The remaining accounting tax book value of all capitalized machinery assets on your asset register before current year wear-and-tear calculations are applied.
+Examples: If a commercial vehicle was bought for €20,000 and has taken 2 years of 12.5% depreciation (€5,000), its baseline WDV entering the new financial year is logged as exactly €15,000.
+10. BAL_CHARGE_ALLOW — Balancing allowance
+Explanation: The ultimate year-end corrective computation. If you sell a capitalized asset for less than its remaining WDV, you get an extra tax deduction (Allowance). If you sell it for more, Revenue claws back tax (Balancing Charge).
+Examples: Scrapping an asset with a WDV of €2,000 for €0 yields a balancing allowance of €2,000. Selling a fully depreciated laptop (WDV €0) for €300 triggers a balancing charge add-back.
+🚜 SECTION 2: FARMING (4 Buckets)
+As shown in file IMG_6706_2.jpg and file IMG_6707_2.jpg, these capture agricultural tax relief mechanisms and adjustments specific to Irish farming profiles.
+11. STOCK_RELIEF_S666 — Stock relief (S.666)
+Explanation: A calculated tax incentive based on Section 666 of the Taxes Consolidation Act that helps farmers avoid spikes in tax when the value of their farm's closing herd or crop inventory grows.
+Examples: A year-end bookkeeping adjustment reducing a drystock farmer's taxable profit by a percentage of the increased value of their livestock herd over the 12-month cycle.
+12. YOUNG_FARM_RELIEF — Young farmer relief (S.667B)
+Explanation: An enhanced 100% stock relief adjustment under Section 667B specifically aimed at assisting young, professionally trained agricultural operators during their critical first 4 years.
+Examples: A 28-year-old who holds a Teagasc Green Cert adjusting their accounts to completely eliminate the taxable income generated from growing their dairy herd stock value during the year.
+13. CARBON_TAX_DE_DUCT — Carbon tax
+Explanation: A targeted agricultural business deduction designed to offset the rising cost of statutory carbon taxes paid on fuel used for essential farming machinery.
+Examples: Aggregating fuel invoices at year-end to extract and claim a direct deduction for the specific carbon tax levies paid on green agricultural diesel (Marked Gas Oil) used in tractors.
+14. SUCCESSION_CREDIT — Succession credit (S.667D)
+Explanation: As shown in file IMG_6707_2.jpg, this captures the direct year-end tax credit allocation (up to €5,000 per year for 5 years) for families operating within a registered Succession Farm Partnership.
+Examples: Applying a statutory €5,000 tax credit split between an older parent and an incoming educated young farmer who have legally committed to transferring farm ownership within a 3-to-10 year window.
+📉 SECTION 3: LOSSES (4 Buckets)
+As shown in file IMG_6707_2.jpg, these manage historical business losses or terminal closure losses used to offset or wipe out current or prior tax liabilities.
+15. UNUSED_LOSS_BF — Unused losses B/F (S.382)
+Explanation: Section 382 trading losses incurred in previous difficult operating years that are carried forward to completely wipe out or reduce your taxable profit in the current successful year.
+Examples: If your business lost €12,000 in 2024 and makes a profit of €20,000 this year, this B/F adjustment line reduces your net taxable profit down to just €8,000.
+16. RES_DEV_LOSS_BF — Res. dev. land losses B/F
+Explanation: Ring-fenced legacy losses brought forward from previous years that were specifically generated from residential development land activities, subject to strict offset restrictions.
+Examples: Utilizing historical losses from an old residential site development project to exclusively offset specific, matching development profits in the current tax year.
+17. FINAL_12M_LOSS — Terminal loss (final 12m)
+Explanation: A specialized terminal loss relief claim triggered when a business permanently ceases operations. It allows losses made in the final 12 months to be carried backward to claim tax refunds from the previous 3 operational years.
+Examples: A shop closing down permanently in mid-year logging its final multi-thousand euro operating loss so it can be applied to get a refund on income taxes paid during its previous profitable years.
+18. FINAL_12M_CAP_ALLOW — Terminal CA (final 12m)
+Explanation: Unabsorbed capital allowances remaining on the asset register at the absolute date of business cessation, packaged to be treated alongside terminal trading losses.
+Examples: Writing off all remaining unamortized wear-and-tear balances on your asset register at the close of a business wind-up to maximize your terminal tax relief claim back against prior years.
+💰 SECTION 4: INCOME (6 Buckets)
+As shown in file IMG_6708_2.jpg, these track year-end, non-standard, or non-invoice revenue injections that must be itemized distinctly from standard operational sales.
+19. GRANTS — Grants received
+Explanation: Non-repayable capital or operational cash injections provided to your business by state development boards or enterprise agencies.
+Examples: Receiving a €2,500 Online Retail Scheme grant from a Local Enterprise Office (LEO), or an expansion funding grant deposit from Enterprise Ireland.
+20. GOV_INCOME — Government income
+Explanation: Structural state payments, sectoral subsidies, or emergency public financial supports paid directly to the business.
+Examples: Receiving a direct agricultural basic income payment (BISS) via the Department of Agriculture, or drawing down a state-backed environmental scheme subsidy payment.
+21. INTEREST_RECVD — Interest received
+Explanation: Gross financial interest yields generated across the tax year on corporate bank savings accounts or business treasury holdings.
+Examples: Capitalized interest payouts amounting to €340 added into your business deposit notice account by a commercial bank over a 12-month period.
+22. RENTAL_INC — Rental income
+Explanation: Non-core trading income collected from leasing out physical building space or real estate assets belonging to the business.
+Examples: Subletting an unused second floor office room inside your leased commercial building to an independent graphic designer for €600 per month.
+23. GOODS_OWN_USE — Goods for own use
+Explanation: The normal retail value of inventory or materials taken directly from business stock by the owner for their own personal or household consumption (must be treated as a sale).
+Examples: A grocery store owner taking €150 worth of food stock home to feed their family, or a building contractor taking timber stock from the yard to build a deck at their own house.
+24. OTHER_INC — Other trading income
+Explanation: Miscellaneous, irregular cash inflows or auxiliary income streams that are business-related but completely separate from your primary invoices and sales.
+Examples: Receiving an insurance payout check compensating the business for a minor stock damage incident, or winning a cash prize at a local commercial trade show.
+🔄 SECTION 5: ADJUSTMENT (6 Buckets)
+As shown in file IMG_6709_2.jpg, these execute year-end "add-backs" to remove personal or non-allowable spending from your business accounts, ensuring you only claim true business deductions.
+25. DRAWINGS — Drawings (owner)
+Explanation: The total cumulative personal cash drawn out of the business bank accounts by a sole trader across the year, or private personal expenses paid via the business card.
+Examples: Transferring €2,500 every month from the business account to a private bank account for living costs, or accidentally paying for family flights on the company debit card.
+26. MOTOR_PRIVATE — Motor – private use
+Explanation: The year-end percentage deduction applied to remove personal driving from your total accumulated vehicle overheads based on logbook mileage tracking.
+Examples: If your total van fuel/insurance for the year was €5,000, but your mileage logs show 30% was for private weekend use, you apply this code to add €1,500 back into your taxable profit.
+27. UTILITIES_PRIVATE — Utilities – private use
+Explanation: The corrective year-end adjustment removing the domestic or non-business consumption portion from home-based utility accounts before finalizing business expenses.
+Examples: Adding back 80% of your home broadband and landline bills because only 20% of the household data usage was directly related to remote business administration.
+28. DONATIONS — Donations
+Explanation: Charitable or political contributions paid out using business bank funds. These are strictly non-deductible against core trading profits and must be added back.
+Examples: Directing a €500 business bank transfer to a local charity or sports club sponsorship that doesn't qualify as direct commercial advertising.
+29. ENTERTAIN — Entertainment
+Explanation: Corporate hospitality, client lunches, or social entertainment costs. Under Irish tax law, these are completely non-deductible and must be added back to profit.
+Examples: Paying a €350 restaurant bill for a dinner with potential new business clients, or buying tickets to a rugby match for a key customer.
+30. ASSET_GAIN — Asset gain
+Explanation: Capital gains or profits realized from selling long-term business investments or real estate property. This income must be stripped out of trading profits because it belongs under Capital Gains Tax (CGT).
+Examples: Selling a commercial building plot for €50,000 more than you originally purchased it for, requiring the profit to be moved off the Form 11 trading section and onto the CGT schedule.
+31. ASSET_LOSS — Asset loss
+Explanation: Capital losses incurred on the sale or disposal of an investment or non-machinery asset, which cannot be mixed with standard operational business expenses.
+Examples: Selling a business-owned investment property at a loss, requiring the loss to be isolated from standard operational cash drops.
+🏢 SECTION 6: OVERHEADS (8 Buckets)
+As shown in file IMG_6710_2.jpg, these represent specialized annual reconciliations, staff structural expenditures, and accounting non-cash provisions.
+32. INSURANCE — Insurance (annual)
+Explanation: The total consolidated annual expenditure for global business liability policies, professional indemnities, or asset coverages finalized at year-end.
+Examples: An annual €1,800 lump-sum premium payment covering your business for Public and Products Liability, or a comprehensive yearly Professional Indemnity policy renewal.
+33. USE_OF_HOME — Use of home as office
+Explanation: The annual calculated pro-rata financial deduction claimed by a sole trader for running an active home workspace, covering household wear, tear, and heating splits.
+Examples: Calculating that your home office occupies 10% of your house’s total floor area, and claiming a matching 10% deduction across your total annual domestic energy bills.
+34. PRSI_ER — Employer PRSI
+Explanation: The cumulative annual sum of all Employer Class A or Class H Pay Related Social Insurance contributions paid out by the business to the state on behalf of your staff.
+Examples: Tracking the total employer PRSI contribution totals generated across 12 months of monthly payroll runs for your 3 shop employees.
+35. PENSION — Pension contributions
+Explanation: Annual contributions made by the sole trader into an approved Personal Retirement Savings Account (PRSA) or RAC to explicitly lower high-rate tax exposure.
+Examples: Transferring a lump sum of €10,000 into an Irish Life or Zurich executive pension scheme before the October tax deadline to lower your prior year's tax liability.
+36. TRAINING — Training & CPD
+Explanation: Total annual educational investments for Continuous Professional Development, trade licenses, or safety certifications mandatory to maintain your trade.
+Examples: Paying the annual fees for a mandatory legal accounting update seminar, or paying for a construction worker's Safe Pass course renewal.
+37. BAD_DEBTS — Bad debts written off
+Explanation: Formal accounting write-offs for specific client invoices from the current tax year that have been proven entirely uncollectible.
+Examples: Formally writing off a €1,500 invoice because the corporate client has officially entered liquidation and the liquidator confirmed no funds will be paid out.
+38. STAFF_COSTS — Additional staff costs
+Explanation: Auxiliary structural spending on human resources that sits completely outside of basic gross wages and salaries.
+Examples: Paying for mandatory staff workplace medical checks, workspace ergonomic assessments, or safety work uniforms and protective footwear for your team.
+39. DEPRECIATION — Depreciation (add-back)
+Explanation: The non-cash commercial depreciation charge calculated on your standard profit and loss accounts. Because tax law replaces this with Capital Allowances, this entry must be added back to your accounting net profit.
+Examples: Adding back the €3,000 straight-line commercial depreciation value calculated by your bookkeeper on your office vehicle so it can be replaced by the official 12.5% wear-and-tear allowance instead.
+⚖️ SECTION 7: BALANCE (8 Buckets)
+As shown in file IMG_6711_2.jpg, these capture your balance sheet items as of December 31st. These are mandatory fields on the Form 11 to show Revenue the overall financial health of your enterprise.
+40. OPENING_CAP — Opening capital balance
+Explanation: The net structural capital equity sitting inside your business accounts on the opening minute of the tax year (January 1st).
+Examples: Logging the cumulative net asset balance carried forward out of the closing day of the previous year as your baseline equity position for the new year.
+41. CAP_INTRO — Capital introduced
+Explanation: Personal private cash funds transferred by the owner from their personal bank accounts directly into the business bank ecosystem to support operations.
+Examples: Transferring €5,000 from your personal savings account into your business account in November to help purchase bulk winter inventory before peak sales season.
+42. STOCK_WIP — Stock & WIP
+Explanation: The physical valuation of all raw material inventory stock or unbilled contract Work-In-Progress sitting on hand at the close of business on December 31st.
+Examples: A retail shop executing a physical stocktake on New Year's Eve and logging that they have exactly €8,500 worth of products on the shelves waiting to be sold.
+43. DEBTORS — Debtors & prepayments
+Explanation: The total outstanding sum of all sales invoices sent to customers that remain unpaid on December 31st, plus any business bills paid in advance for the coming year.
+Examples: Your year-end trade accounts receivable ledger showing €4,200 is still owed to you by clients, plus an insurance policy that you prepaid 6 months in advance.
+44. CREDITORS — Creditors & accruals
+Explanation: The total end-of-year sum of all supplier bills you have received but have not yet paid by December 31st, plus calculated costs incurred but not yet invoiced.
+Examples: Owing €3,100 to your main wholesale materials supplier for stock delivered in December, alongside an accrued estimate for your unbilled December electricity usage.
+45. CASH_BANK_DR — Cash / bank (debit)
+Explanation: The closing positive balance (debit) remaining across all business bank accounts, Stripe registers, and cash tills at the final minute of the year.
+Examples: Having a balance of €14,350 in your business current account, €420 in your Stripe processing account, and €100 in cash inside your shop till at midnight on December 31st.
+46. BANK_LOAN_CR — Bank / loans (credit)
+Explanation: The total outstanding liability value (credit balance) owed to external financial lenders or card companies at the close of the tax year.
+Examples: An outstanding balance of €12,000 on a 3-year term business loan, or an active balance of €1,400 owed on your business credit card account at year-end.
+47. TAX_CREDITORS — Tax creditors
+Explanation: The specific liability balance owed directly to Revenue on December 31st for operational taxes that have been collected or calculated but not yet paid over.
+Examples: A balance showing you owe €2,150 in VAT collected during the November/December period, alongside outstanding relevant contracts tax (RCT) or payroll tax liabilities awaiting settlement.

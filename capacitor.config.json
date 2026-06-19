@@ -1,0 +1,15 @@
+{
+  "appId": "ie.form11.app",
+  "appName": "Taxy",
+  "webDir": "native-web",
+  "server": {
+    "hostname": "localhost",
+    "iosScheme": "capacitor",
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "StatusBar": {
+      "overlaysWebView": false
+    }
+  }
+}

@@ -1,0 +1,4 @@
+project_id = "yigehjfljfederoinnnm"
+
+[functions.test-login]
+verify_jwt = false
