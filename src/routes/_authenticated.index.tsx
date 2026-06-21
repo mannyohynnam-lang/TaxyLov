@@ -14,7 +14,8 @@ import { categoryLabel } from "@/lib/category-labels-uk";
 import { CapacitorHttp } from "@capacitor/core";
 import { supabase } from "@/integrations/supabase/client";
 
-const SUGGEST_CATEGORY_ENDPOINT = "https://2d5da693-7923-451f-9f5a-ecad10f1a2f3-00-3s6lyi31eatfg.picard.replit.dev/api/public/suggest-category";
+const _API_BASE = (import.meta.env.VITE_API_BASE_URL as string | undefined) ?? "";
+const SUGGEST_CATEGORY_ENDPOINT = `${_API_BASE}/api/public/suggest-category`;
 
 function isNativeOrigin(): boolean {
   if (typeof window === "undefined") return false;

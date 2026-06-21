@@ -26,8 +26,8 @@ export const Route = createFileRoute("/api/public/categorize-file")({
 
       POST: async ({ request }) => {
         try {
-          const apiKey = process.env.LOVABLE_API_KEY;
-          if (!apiKey) return json({ error: "LOVABLE_API_KEY not configured" }, 500);
+          const apiKey = process.env.GOOGLE_AI_API_KEY;
+          if (!apiKey) return json({ error: "GOOGLE_AI_API_KEY not configured" }, 500);
 
           const body = (await request.json().catch(() => ({}))) as CategorizeBody;
           const fileUrl = typeof body.fileUrl === "string" ? body.fileUrl : "";
@@ -87,16 +87,14 @@ export const Route = createFileRoute("/api/public/categorize-file")({
             ];
           }
 
-          const aiRes = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
+          const aiRes = await fetch("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
-              "Lovable-API-Key": apiKey,
-              "X-Lovable-AIG-SDK": "fetch",
+              "Authorization": `Bearer ${apiKey}`,
             },
             body: JSON.stringify({
-              model: "google/gemini-3-flash-preview",
-              response_format: { type: "json_object" },
+              model: "gemini-2.0-flash",
               messages: [
                 {
                   role: "system",
