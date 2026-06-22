@@ -5,6 +5,42 @@ import { Mail, ArrowRight, Loader2, RefreshCw } from "lucide-react";
 import { toast } from "sonner";
 import { useT } from "@/lib/i18n";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { CapacitorHttp } from "@capacitor/core";
+
+// Must match the pattern used for suggest-category:
+// VITE_API_BASE_URL must be set to the deployed https:// URL before a Capacitor build.
+// On web, _API_BASE is "" so the path is relative ("/api/public/send-otp-email").
+const _API_BASE = (import.meta.env.VITE_API_BASE_URL as string | undefined)?.replace(/\/$/, "") ?? "";
+const SEND_OTP_ENDPOINT = `${_API_BASE}/api/public/send-otp-email`;
+
+function isNativeOrigin(): boolean {
+  if (typeof window === "undefined") return false;
+  return window.location.origin.startsWith("capacitor:");
+}
+
+type SendOtpResult = { tokenHash: string | null; error?: string };
+
+async function callSendOtpEmail(email: string): Promise<SendOtpResult> {
+  if (isNativeOrigin()) {
+    if (!_API_BASE) throw new Error("VITE_API_BASE_URL is not set for this native build.");
+    const res = await CapacitorHttp.post({
+      url: SEND_OTP_ENDPOINT,
+      headers: { "Content-Type": "application/json" },
+      data: { email },
+    });
+    const json = res.data as { success?: boolean; tokenHash?: string; error?: string };
+    if (res.status < 200 || res.status >= 300) return { tokenHash: null, error: json?.error ?? `Request failed: ${res.status}` };
+    return { tokenHash: json?.tokenHash ?? null };
+  }
+  const res = await fetch(SEND_OTP_ENDPOINT, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email }),
+  });
+  const json = await res.json();
+  if (!res.ok) return { tokenHash: null, error: json?.error ?? `Request failed: ${res.status}` };
+  return { tokenHash: json?.tokenHash ?? null };
+}
 
 export const Route = createFileRoute("/auth")({
   ssr: false,
@@ -31,6 +67,7 @@ function AuthPage() {
   const [error, setError] = useState("");
   const [resendCount, setResendCount] = useState(0);
   const [cooldown, setCooldown] = useState(0);
+  const [tokenHash, setTokenHash] = useState<string | null>(null);
 
   useEffect(() => {
     const { data: sub } = supabase.auth.onAuthStateChange(async (_e, session) => {
@@ -78,19 +115,23 @@ function AuthPage() {
       return;
     }
 
-    const { error: otpError } = await supabase.auth.signInWithOtp({
-      email: email.trim(),
-      options: { shouldCreateUser: true },
-    });
-    setLoading(false);
-    if (otpError) {
-      setError(otpError.message);
-    } else {
+    try {
+      const result = await callSendOtpEmail(email.trim());
+      if (result.error) {
+        setError(result.error);
+        setLoading(false);
+        return;
+      }
+      if (result.tokenHash) setTokenHash(result.tokenHash);
+      setLoading(false);
       setStep("otp");
       setCooldown(COOLDOWN_SECONDS);
       toast.success(t("auth.codeSent"));
+    } catch (e) {
+      setError(e instanceof Error ? e.message : t("auth.sendFailed"));
+      setLoading(false);
     }
-  }, [email]);
+  }, [email, t]);
 
   const resendOtp = useCallback(async () => {
     if (resendCount >= MAX_RESENDS) {
@@ -100,19 +141,22 @@ function AuthPage() {
     if (cooldown > 0) return;
     setLoading(true);
     setError("");
-    const { error: otpError } = await supabase.auth.signInWithOtp({
-      email: email.trim(),
-      options: { shouldCreateUser: true },
-    });
-    setLoading(false);
-    if (otpError) {
-      setError(otpError.message);
-    } else {
-      setResendCount((c) => c + 1);
-      setCooldown(COOLDOWN_SECONDS);
-      toast.success(t("auth.newCodeSent"));
+    try {
+      const result = await callSendOtpEmail(email.trim());
+      setLoading(false);
+      if (result.error) {
+        setError(result.error);
+      } else {
+        if (result.tokenHash) setTokenHash(result.tokenHash);
+        setResendCount((c) => c + 1);
+        setCooldown(COOLDOWN_SECONDS);
+        toast.success(t("auth.newCodeSent"));
+      }
+    } catch (e) {
+      setError(e instanceof Error ? e.message : t("auth.sendFailed"));
+      setLoading(false);
     }
-  }, [email, resendCount, cooldown]);
+  }, [email, resendCount, cooldown, t]);
 
   const verifyOtp = useCallback(async () => {
     if (!otp.trim()) return;
@@ -144,11 +188,11 @@ function AuthPage() {
       }
     }
 
-    const { error: verifyError } = await supabase.auth.verifyOtp({
-      email: email.trim(),
-      token: otp.trim(),
-      type: "email",
-    });
+    // If our server gave us a tokenHash (magiclink), verify by token_hash.
+    // Otherwise fall back to standard email OTP verification.
+    const { error: verifyError } = tokenHash
+      ? await supabase.auth.verifyOtp({ token_hash: tokenHash, type: "magiclink" })
+      : await supabase.auth.verifyOtp({ email: email.trim(), token: otp.trim(), type: "email" });
     setLoading(false);
     if (verifyError) {
       const msg = verifyError.message.toLowerCase();
@@ -156,7 +200,7 @@ function AuthPage() {
       else if (msg.includes("invalid")) setError(t("auth.invalid"));
       else setError(verifyError.message);
     }
-  }, [email, otp, t]);
+  }, [email, otp, t, tokenHash]);
 
   return (
     <div className="safe-area-page flex flex-col items-center bg-background relative">
@@ -240,7 +284,7 @@ function AuthPage() {
 
               <div className="flex items-center justify-between mt-4">
                 <button
-                  onClick={() => { setStep("email"); setOtp(""); setError(""); setResendCount(0); setCooldown(0); }}
+                  onClick={() => { setStep("email"); setOtp(""); setError(""); setResendCount(0); setCooldown(0); setTokenHash(null); }}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {t("auth.changeEmail")}

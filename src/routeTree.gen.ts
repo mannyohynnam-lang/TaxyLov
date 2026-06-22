@@ -21,6 +21,7 @@ import { Route as AuthenticatedReportRouteImport } from './routes/_authenticated
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated.dashboard'
 import { Route as AuthenticatedCategorizeRouteImport } from './routes/_authenticated.categorize'
 import { Route as ApiPublicSuggestCategoryRouteImport } from './routes/api/public/suggest-category'
+import { Route as ApiPublicSendOtpEmailRouteImport } from './routes/api/public/send-otp-email'
 import { Route as ApiPublicCategorizeFileRouteImport } from './routes/api/public/categorize-file'
 import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
 import { Route as LovableEmailAuthWebhookRouteImport } from './routes/lovable/email/auth/webhook'
@@ -86,6 +87,11 @@ const ApiPublicSuggestCategoryRoute =
     path: '/api/public/suggest-category',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ApiPublicSendOtpEmailRoute = ApiPublicSendOtpEmailRouteImport.update({
+  id: '/api/public/send-otp-email',
+  path: '/api/public/send-otp-email',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicCategorizeFileRoute = ApiPublicCategorizeFileRouteImport.update({
   id: '/api/public/categorize-file',
   path: '/api/public/categorize-file',
@@ -120,6 +126,7 @@ export interface FileRoutesByFullPath {
   '/report': typeof AuthenticatedReportRoute
   '/settings': typeof AuthenticatedSettingsRoute
   '/api/public/categorize-file': typeof ApiPublicCategorizeFileRoute
+  '/api/public/send-otp-email': typeof ApiPublicSendOtpEmailRoute
   '/api/public/suggest-category': typeof ApiPublicSuggestCategoryRoute
   '/lovable/email/auth/preview': typeof LovableEmailAuthPreviewRoute
   '/lovable/email/auth/webhook': typeof LovableEmailAuthWebhookRoute
@@ -137,6 +144,7 @@ export interface FileRoutesByTo {
   '/settings': typeof AuthenticatedSettingsRoute
   '/': typeof AuthenticatedIndexRoute
   '/api/public/categorize-file': typeof ApiPublicCategorizeFileRoute
+  '/api/public/send-otp-email': typeof ApiPublicSendOtpEmailRoute
   '/api/public/suggest-category': typeof ApiPublicSuggestCategoryRoute
   '/lovable/email/auth/preview': typeof LovableEmailAuthPreviewRoute
   '/lovable/email/auth/webhook': typeof LovableEmailAuthWebhookRoute
@@ -156,6 +164,7 @@ export interface FileRoutesById {
   '/_authenticated/settings': typeof AuthenticatedSettingsRoute
   '/_authenticated/': typeof AuthenticatedIndexRoute
   '/api/public/categorize-file': typeof ApiPublicCategorizeFileRoute
+  '/api/public/send-otp-email': typeof ApiPublicSendOtpEmailRoute
   '/api/public/suggest-category': typeof ApiPublicSuggestCategoryRoute
   '/lovable/email/auth/preview': typeof LovableEmailAuthPreviewRoute
   '/lovable/email/auth/webhook': typeof LovableEmailAuthWebhookRoute
@@ -175,6 +184,7 @@ export interface FileRouteTypes {
     | '/report'
     | '/settings'
     | '/api/public/categorize-file'
+    | '/api/public/send-otp-email'
     | '/api/public/suggest-category'
     | '/lovable/email/auth/preview'
     | '/lovable/email/auth/webhook'
@@ -192,6 +202,7 @@ export interface FileRouteTypes {
     | '/settings'
     | '/'
     | '/api/public/categorize-file'
+    | '/api/public/send-otp-email'
     | '/api/public/suggest-category'
     | '/lovable/email/auth/preview'
     | '/lovable/email/auth/webhook'
@@ -210,6 +221,7 @@ export interface FileRouteTypes {
     | '/_authenticated/settings'
     | '/_authenticated/'
     | '/api/public/categorize-file'
+    | '/api/public/send-otp-email'
     | '/api/public/suggest-category'
     | '/lovable/email/auth/preview'
     | '/lovable/email/auth/webhook'
@@ -224,6 +236,7 @@ export interface RootRouteChildren {
   PrivacyRoute: typeof PrivacyRoute
   TermsRoute: typeof TermsRoute
   ApiPublicCategorizeFileRoute: typeof ApiPublicCategorizeFileRoute
+  ApiPublicSendOtpEmailRoute: typeof ApiPublicSendOtpEmailRoute
   ApiPublicSuggestCategoryRoute: typeof ApiPublicSuggestCategoryRoute
   LovableEmailAuthPreviewRoute: typeof LovableEmailAuthPreviewRoute
   LovableEmailAuthWebhookRoute: typeof LovableEmailAuthWebhookRoute
@@ -316,6 +329,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicSuggestCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/send-otp-email': {
+      id: '/api/public/send-otp-email'
+      path: '/api/public/send-otp-email'
+      fullPath: '/api/public/send-otp-email'
+      preLoaderRoute: typeof ApiPublicSendOtpEmailRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/categorize-file': {
       id: '/api/public/categorize-file'
       path: '/api/public/categorize-file'
@@ -375,6 +395,7 @@ const rootRouteChildren: RootRouteChildren = {
   PrivacyRoute: PrivacyRoute,
   TermsRoute: TermsRoute,
   ApiPublicCategorizeFileRoute: ApiPublicCategorizeFileRoute,
+  ApiPublicSendOtpEmailRoute: ApiPublicSendOtpEmailRoute,
   ApiPublicSuggestCategoryRoute: ApiPublicSuggestCategoryRoute,
   LovableEmailAuthPreviewRoute: LovableEmailAuthPreviewRoute,
   LovableEmailAuthWebhookRoute: LovableEmailAuthWebhookRoute,

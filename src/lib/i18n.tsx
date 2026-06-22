@@ -32,6 +32,7 @@ const dict = {
     "auth.expired": "This code has expired. Please request a new one.",
     "auth.invalid": "Invalid code. Please try again.",
     "auth.testFailed": "Test login failed",
+    "auth.sendFailed": "Failed to send code. Please try again.",
 
     // Paywall
     "paywall.title": "Unlock full access",
@@ -199,6 +200,7 @@ const dict = {
     "auth.expired": "Термін дії коду минув. Будь ласка, запросіть новий.",
     "auth.invalid": "Невірний код. Спробуйте ще раз.",
     "auth.testFailed": "Тестовий вхід не вдався",
+    "auth.sendFailed": "Не вдалося надіслати код. Спробуйте ще раз.",
 
     // Paywall
     "paywall.title": "Розблокувати повний доступ",
