@@ -33,6 +33,9 @@ const InputSchema = z.object({
     .max(200),
 });
 
+// Simple utility function to handle exponential backoff delays
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
 export const Route = createFileRoute("/api/public/suggest-category")({
   server: {
     handlers: {
@@ -91,31 +94,64 @@ export const Route = createFileRoute("/api/public/suggest-category")({
             "\n=== END OF GUIDE ===";
           const user = `Current tab: ${data.period} (informational only — pick from ANY scope)\nDescription: "${data.description}"\n\nAllowed categories (code [scope]: label):\n${list}\n\nReply with one code only.`;
 
-          const res = await fetch("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "Authorization": `Bearer ${apiKey}`,
-            },
-            body: JSON.stringify({
-              model: "gemini-2.0-flash",
-              messages: [
-                { role: "system", content: system },
-                { role: "user", content: user },
-              ],
-            }),
-          });
+          let res: Response | null = null;
+          const maxRetries = 3;
+          let currentDelay = 500; // start with 500ms sleep
 
-          if (res.status === 429) return json({ error: "AI is busy — please try again in a moment." }, 429);
-          if (res.status === 402) return json({ error: "AI credits exhausted. Add credits in Workspace → Usage." }, 402);
-          if (!res.ok) {
-            const errText = await res.text().catch(() => "");
-            console.error("[suggest-category] AI gateway error", res.status, errText);
-            return json({ error: `AI request failed: ${res.status}` }, 502);
+          // Retry loop specifically for 429 rate bounds from cloud IPs
+          for (let attempt = 0; attempt <= maxRetries; attempt++) {
+            res = await fetch(
+              `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+              {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  systemInstruction: { parts: [{ text: system }] },
+                  contents: [{ role: "user", parts: [{ text: user }] }],
+                  generationConfig: { temperature: 0.1, maxOutputTokens: 50 },
+                }),
+              },
+            );
+
+            // If we succeed, or get an un-retryable error like a 401 or 400, break out
+            if (res.status !== 429 || attempt === maxRetries) {
+              break;
+            }
+
+            console.warn(
+              `[suggest-category] AI rate limited (429). Retrying in ${currentDelay}ms... (Attempt ${attempt + 1}/${maxRetries})`,
+            );
+            await delay(currentDelay);
+            currentDelay *= 2; // double the wait time for the next block
           }
 
-          const aiJson = (await res.json()) as { choices?: Array<{ message?: { content?: string } }> };
-          const raw = (aiJson.choices?.[0]?.message?.content ?? "").trim();
+          if (!res || !res.ok) {
+            const errText = res ? await res.text().catch(() => "") : "No response context";
+            const status = res ? res.status : 502;
+            console.error("[suggest-category] AI error", status, errText.slice(0, 500));
+
+            if (status === 429) {
+              return json(
+                {
+                  error:
+                    "AI busy due to high infrastructure volume. Please retry your classification momentarily.",
+                },
+                429,
+              );
+            }
+            if (status === 402) {
+              return json(
+                { error: "AI credits exhausted. Add credits in Workspace → Usage." },
+                402,
+              );
+            }
+            return json({ error: `AI request failed: ${status}: ${errText.slice(0, 200)}` }, 502);
+          }
+
+          const aiJson = (await res.json()) as {
+            candidates?: Array<{ content?: { parts?: Array<{ text?: string }> } }>;
+          };
+          const raw = (aiJson.candidates?.[0]?.content?.parts?.[0]?.text ?? "").trim();
           const cleaned = raw.replace(/[`"'\s.]/g, "").toUpperCase();
           const allowed = new Set(data.categories.map((c) => c.code.toUpperCase()));
           const match =

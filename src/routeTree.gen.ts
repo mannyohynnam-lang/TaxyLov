@@ -20,6 +20,7 @@ import { Route as AuthenticatedSettingsRouteImport } from './routes/_authenticat
 import { Route as AuthenticatedReportRouteImport } from './routes/_authenticated.report'
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated.dashboard'
 import { Route as AuthenticatedCategorizeRouteImport } from './routes/_authenticated.categorize'
+import { Route as ApiPublicTestLoginRouteImport } from './routes/api/public/test-login'
 import { Route as ApiPublicSuggestCategoryRouteImport } from './routes/api/public/suggest-category'
 import { Route as ApiPublicSendOtpEmailRouteImport } from './routes/api/public/send-otp-email'
 import { Route as ApiPublicCategorizeFileRouteImport } from './routes/api/public/categorize-file'
@@ -81,6 +82,11 @@ const AuthenticatedCategorizeRoute = AuthenticatedCategorizeRouteImport.update({
   path: '/categorize',
   getParentRoute: () => AuthenticatedRoute,
 } as any)
+const ApiPublicTestLoginRoute = ApiPublicTestLoginRouteImport.update({
+  id: '/api/public/test-login',
+  path: '/api/public/test-login',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicSuggestCategoryRoute =
   ApiPublicSuggestCategoryRouteImport.update({
     id: '/api/public/suggest-category',
@@ -128,6 +134,7 @@ export interface FileRoutesByFullPath {
   '/api/public/categorize-file': typeof ApiPublicCategorizeFileRoute
   '/api/public/send-otp-email': typeof ApiPublicSendOtpEmailRoute
   '/api/public/suggest-category': typeof ApiPublicSuggestCategoryRoute
+  '/api/public/test-login': typeof ApiPublicTestLoginRoute
   '/lovable/email/auth/preview': typeof LovableEmailAuthPreviewRoute
   '/lovable/email/auth/webhook': typeof LovableEmailAuthWebhookRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
@@ -146,6 +153,7 @@ export interface FileRoutesByTo {
   '/api/public/categorize-file': typeof ApiPublicCategorizeFileRoute
   '/api/public/send-otp-email': typeof ApiPublicSendOtpEmailRoute
   '/api/public/suggest-category': typeof ApiPublicSuggestCategoryRoute
+  '/api/public/test-login': typeof ApiPublicTestLoginRoute
   '/lovable/email/auth/preview': typeof LovableEmailAuthPreviewRoute
   '/lovable/email/auth/webhook': typeof LovableEmailAuthWebhookRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
@@ -166,6 +174,7 @@ export interface FileRoutesById {
   '/api/public/categorize-file': typeof ApiPublicCategorizeFileRoute
   '/api/public/send-otp-email': typeof ApiPublicSendOtpEmailRoute
   '/api/public/suggest-category': typeof ApiPublicSuggestCategoryRoute
+  '/api/public/test-login': typeof ApiPublicTestLoginRoute
   '/lovable/email/auth/preview': typeof LovableEmailAuthPreviewRoute
   '/lovable/email/auth/webhook': typeof LovableEmailAuthWebhookRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
@@ -186,6 +195,7 @@ export interface FileRouteTypes {
     | '/api/public/categorize-file'
     | '/api/public/send-otp-email'
     | '/api/public/suggest-category'
+    | '/api/public/test-login'
     | '/lovable/email/auth/preview'
     | '/lovable/email/auth/webhook'
     | '/lovable/email/queue/process'
@@ -204,6 +214,7 @@ export interface FileRouteTypes {
     | '/api/public/categorize-file'
     | '/api/public/send-otp-email'
     | '/api/public/suggest-category'
+    | '/api/public/test-login'
     | '/lovable/email/auth/preview'
     | '/lovable/email/auth/webhook'
     | '/lovable/email/queue/process'
@@ -223,6 +234,7 @@ export interface FileRouteTypes {
     | '/api/public/categorize-file'
     | '/api/public/send-otp-email'
     | '/api/public/suggest-category'
+    | '/api/public/test-login'
     | '/lovable/email/auth/preview'
     | '/lovable/email/auth/webhook'
     | '/lovable/email/queue/process'
@@ -238,6 +250,7 @@ export interface RootRouteChildren {
   ApiPublicCategorizeFileRoute: typeof ApiPublicCategorizeFileRoute
   ApiPublicSendOtpEmailRoute: typeof ApiPublicSendOtpEmailRoute
   ApiPublicSuggestCategoryRoute: typeof ApiPublicSuggestCategoryRoute
+  ApiPublicTestLoginRoute: typeof ApiPublicTestLoginRoute
   LovableEmailAuthPreviewRoute: typeof LovableEmailAuthPreviewRoute
   LovableEmailAuthWebhookRoute: typeof LovableEmailAuthWebhookRoute
   LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
@@ -322,6 +335,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedCategorizeRouteImport
       parentRoute: typeof AuthenticatedRoute
     }
+    '/api/public/test-login': {
+      id: '/api/public/test-login'
+      path: '/api/public/test-login'
+      fullPath: '/api/public/test-login'
+      preLoaderRoute: typeof ApiPublicTestLoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/suggest-category': {
       id: '/api/public/suggest-category'
       path: '/api/public/suggest-category'
@@ -397,6 +417,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiPublicCategorizeFileRoute: ApiPublicCategorizeFileRoute,
   ApiPublicSendOtpEmailRoute: ApiPublicSendOtpEmailRoute,
   ApiPublicSuggestCategoryRoute: ApiPublicSuggestCategoryRoute,
+  ApiPublicTestLoginRoute: ApiPublicTestLoginRoute,
   LovableEmailAuthPreviewRoute: LovableEmailAuthPreviewRoute,
   LovableEmailAuthWebhookRoute: LovableEmailAuthWebhookRoute,
   LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,

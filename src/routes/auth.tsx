@@ -163,14 +163,18 @@ function AuthPage() {
     setLoading(true);
     setError("");
 
-    // Test user bypass – use edge function to mint a real session
+    // Test user bypass – use local server route to mint a real session
     if (email.trim().toLowerCase() === TEST_EMAIL && otp.trim() === TEST_CODE) {
       try {
-        const { data: fnData, error: fnError } = await supabase.functions.invoke("test-login", {
-          body: { email: TEST_EMAIL, code: TEST_CODE },
+        const base = (import.meta.env.VITE_API_BASE_URL as string | undefined)?.replace(/\/$/, "") ?? "";
+        const res = await fetch(`${base}/api/public/test-login`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: TEST_EMAIL, code: TEST_CODE }),
         });
-        if (fnError || !fnData?.token_hash) {
-          setError(fnError?.message ?? t("auth.testFailed"));
+        const fnData = await res.json() as { token_hash?: string; error?: string };
+        if (!res.ok || !fnData?.token_hash) {
+          setError(fnData?.error ?? t("auth.testFailed"));
           setLoading(false);
           return;
         }

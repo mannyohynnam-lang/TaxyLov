@@ -8,11 +8,23 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 import { loadEnv } from "vite";
 import path from "path";
 
-// Load all server env vars into process.env so server routes can read non-VITE_-prefixed
-// secrets like SUPABASE_SERVICE_ROLE_KEY. The lovable preset already loads VITE_-prefixed
-// vars for client code.
+// Load .env vars into process.env — but never overwrite secrets already injected
+// by the host environment (Replit secrets take priority over .env file values).
 const serverEnv = loadEnv(process.env.NODE_ENV ?? "development", process.cwd(), "");
-Object.assign(process.env, serverEnv);
+for (const [key, value] of Object.entries(serverEnv)) {
+  if (!(key in process.env)) {
+    process.env[key] = value;
+  }
+}
+
+// Mirror the real server-side Supabase secrets as VITE_* so the browser client
+// always talks to the same project the server validates tokens against.
+if (process.env.SUPABASE_URL) {
+  process.env.VITE_SUPABASE_URL = process.env.SUPABASE_URL;
+}
+if (process.env.SUPABASE_PUBLISHABLE_KEY) {
+  process.env.VITE_SUPABASE_PUBLISHABLE_KEY = process.env.SUPABASE_PUBLISHABLE_KEY;
+}
 
 // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
 // @cloudflare/vite-plugin builds from this — wrangler.jsonc main alone is insufficient.

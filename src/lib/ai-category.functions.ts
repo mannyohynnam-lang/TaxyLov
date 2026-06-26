@@ -21,7 +21,7 @@ const InputSchema = z.object({
 
 export const suggestCategory = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
-  .inputValidator((input) => InputSchema.parse(input))
+  .validator((input) => InputSchema.parse(input))
   .handler(async ({ data, context }) => {
     const apiKey = process.env.GOOGLE_AI_API_KEY;
     if (!apiKey) throw new Error("GOOGLE_AI_API_KEY is not configured");
@@ -56,33 +56,31 @@ export const suggestCategory = createServerFn({ method: "POST" })
       "\n=== END OF GUIDE ===";
     const user = `Current tab: ${data.period} (informational only — pick from ANY scope)\nDescription: "${data.description}"\n\nAllowed categories (code [scope]: label):\n${list}\n\nReply with one code only.`;
 
-    const res = await fetch("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${apiKey}`,
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          systemInstruction: { parts: [{ text: system }] },
+          contents: [{ role: "user", parts: [{ text: user }] }],
+          generationConfig: { temperature: 0.1, maxOutputTokens: 50 },
+        }),
       },
-      body: JSON.stringify({
-        model: "gemini-2.0-flash",
-        messages: [
-          { role: "system", content: system },
-          { role: "user", content: user },
-        ],
-      }),
-    });
+    );
 
-    if (res.status === 429) throw new Error("AI is busy — please try again in a moment.");
-    if (res.status === 402) throw new Error("AI credits exhausted. Add credits in Workspace → Usage.");
     if (!res.ok) {
       const errText = await res.text().catch(() => "");
-      console.error("[suggestCategory] AI gateway error", res.status, errText);
+      console.error("[suggestCategory] AI error", res.status, errText.slice(0, 500));
+      if (res.status === 429) throw new Error("AI quota exceeded — the Google AI API key has no remaining quota. Please check the key in Settings.");
+      if (res.status === 402) throw new Error("AI credits exhausted. Add credits in Workspace → Usage.");
       throw new Error(`AI request failed: ${res.status} ${errText.slice(0, 200)}`);
     }
 
     const json = (await res.json()) as {
-      choices?: Array<{ message?: { content?: string } }>;
+      candidates?: Array<{ content?: { parts?: Array<{ text?: string }> } }>;
     };
-    const raw = (json.choices?.[0]?.message?.content ?? "").trim();
+    const raw = (json.candidates?.[0]?.content?.parts?.[0]?.text ?? "").trim();
     const cleaned = raw.replace(/[`"'\s.]/g, "").toUpperCase();
 
     const allowed = new Set(data.categories.map((c) => c.code.toUpperCase()));
